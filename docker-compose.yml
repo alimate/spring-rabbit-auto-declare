@@ -1,8 +1,10 @@
 version: "3"
 services:
   rabbit:
+    container_name: rabbit
     image: rabbitmq:3.7
   boot:
+    container_name: boot
     build:
       context: .
     depends_on:
