@@ -31,7 +31,7 @@ $ docker exec -it rabbit rabbitmqctl list_queues
 Timeout: 60.0 seconds ...
 Listing queues for vhost / ...
 ```
-As you can see, there is no declared queues there. Now if we send publish something to the `first.queue`, then the 
+As you can see, there is no declared queues there. Now if we publish something to the `first.queue`, then the 
 queue would be declared:
 ```bash
 $ curl localhost:8080/declare
