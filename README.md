@@ -18,7 +18,11 @@ at the application startup, but it wasn't until the first time I publish somethi
 ## How to Run?
 First off, make sure the `up.sh` is executable by you:
 ```bash
-$ chmod u+x up.sh # or simply do a bash up.sh
+$ chmod u+x up.sh
+```
+Then, do a `./up.sh`:
+```bash
+./up.sh
 ```
 After a few moments, our App and a RabbitMQ instance would be up and running. Wait for the App to start completely,
 then run the following command:
