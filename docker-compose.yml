@@ -1,0 +1,13 @@
+version: "3"
+services:
+  rabbit:
+    image: rabbitmq:3.7
+  boot:
+    build:
+      context: .
+    depends_on:
+      - rabbit
+    environment:
+      - SPRING_RABBITMQ_HOST=rabbit
+    ports:
+      - 8080:8080
